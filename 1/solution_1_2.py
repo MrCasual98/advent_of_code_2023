@@ -17,10 +17,7 @@ number_dict = {
 
 
 def map_number(number):
-    if number in number_dict.keys():
-        return number_dict[number]
-    else:
-        return number
+    return number_dict.get(number, number)
 
 
 numbers = []
